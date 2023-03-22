@@ -1,0 +1,23 @@
+@startuml
+left to right direction
+actor 申請者 as user #DDDDDD;line:black;line.bold;
+actor 承諾者 as admin #DDDDDD;line:black;line.bold;
+actor 交通費清算システム as system #DDDDDD;line:black;line.bold;
+actor 経理担当者 as person #DDDDDD;line:black;line.bold;
+rectangle 出張申請システム {
+usecase 出張申請を登録する as K
+usecase 出張申請を提出する as E
+usecase 出張申請を承諾する as n
+usecase 出張申請を却下する as N
+usecase 出張申請を差し戻す as G
+usecase 出張申請を確認する as O
+}
+user---> K
+user---> E
+admin---> n
+admin---> N
+admin---> G
+admin---> O
+person ---> O
+K <--- system
+@enduml
