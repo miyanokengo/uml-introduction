@@ -1,8 +1,8 @@
 @startuml シーケンス図
 actor 出荷担当者 #DDDDDD;line:black;line.bold;
-rectangle システム {
-    usecase 登録
-    usecase 確認
+rectangle 販売管理システム {
+    usecase 登録する
+    usecase 確認する
 }
-出荷担当者--> 登録:<< 登録 >>
-出荷担当者--> 確認:<< 確認 >>
+出荷担当者--> 登録する
+出荷担当者--> 確認する
