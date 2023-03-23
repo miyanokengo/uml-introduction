@@ -2,7 +2,7 @@
 actor 出荷担当者 #DDDDDD;line:black;line.bold;
 rectangle 販売管理システム {
     usecase 出荷状況をシステムに登録する
-    usecase 注文商品をシステムで確認
+    usecase 注文商品をシステムで確認する
 }
 出荷担当者--> 出荷状況をシステムに登録する
 出荷担当者--> 注文商品をシステムで確認する
