@@ -1,17 +1,17 @@
 @startuml 
-object "車 車クラス" as car{
+object "車 " as car{
 
 }
-object "車 タイヤクラス" as a{
+object "車 タイヤ" as a{
     
 }
-object "車 タイヤクラス" as b{
+object "車 タイヤ" as b{
     
 }
-object "車 タイヤクラス" as c{
+object "車 タイヤ" as c{
     
 }
-object "車 タイヤクラス" as d{
+object "車 タイヤ" as d{
     
 }
 car-up-a
