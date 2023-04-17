@@ -1,0 +1,23 @@
+@startuml
+hide footbox
+Actor "客" as k
+participant ":フロア店員" as tn
+participant ":シェフ" as cook
+mainframe sd ラーメン屋
+activate k
+k -> tn :ラーメンを注文する
+activate tn
+tn -> cook :調理を指示する
+activate cook
+cook -> cook :調理をする
+tn <<-- cook :ラーメン
+k <<-- tn :ラーメン
+deactivate cook
+deactivate tn
+@enduml
+
+
+
+
+
+

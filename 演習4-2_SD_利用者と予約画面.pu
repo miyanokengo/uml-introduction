@@ -1,0 +1,13 @@
+@startuml
+hide footbox
+participant "利用者" as user
+participant "予約画面" as yoyaku
+activate user
+    user ->> yoyaku: ログイン
+    activate yoyaku
+    yoyaku -> yoyaku: 認証
+    activate yoyaku
+    note right of yoyaku : 再帰呼出し
+    deactivate yoyaku
+deactivate user
+@enduml

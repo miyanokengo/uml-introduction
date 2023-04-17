@@ -1,0 +1,16 @@
+@startuml
+hide footbox
+Actor 客 as member
+participant ":フロア定員" as boundary 
+participant ":料理人（宮野健悟）" as control 
+mainframe sd 焼肉冷麺ヤマト
+activate member
+activate boundary
+member -> boundary : 肉注文
+boundary -> control : 調理を支持
+activate control
+control -> control :調理する
+boundary <<-- control : ビビンバ
+member <<-- boundary :冷麺
+deactivate control
+deactivate boundary
