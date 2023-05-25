@@ -1,0 +1,21 @@
+@startuml
+left to right direction
+class "ライントレーサー" as a{}
+
+class "光センサー" as b{}
+
+class "右モータ" as c{}
+
+class "左モータ" as d{}
+
+class "CPU" as e{}
+
+class "電源SW" as f{}
+
+a "1"*--"1" b
+a "1"*--"1" c
+a "1"*--"1" d
+a "1"*--"1" e
+a "1"*-"1" f
+hide circle
+@enduml
