@@ -1,0 +1,14 @@
+@startuml
+[*] -left-> 電源SWOFF状態
+state 電源SWON状態 {
+    state entry <<entryPoint>>
+    state exit <<exitPoint>>
+    電源SWOFF状態 -down-> entry: 電源SWをONにする
+    entry ---> 右旋回: 暗いと判断した場合
+    entry --> 左旋回: 明るいと判断した場合
+    右旋回 --> exit
+    左旋回 --> exit 
+    exit --> 電源SWOFF状態: 電源SWをOFFにする
+}
+電源SWOFF状態 -left-> [*]
+@enduml
