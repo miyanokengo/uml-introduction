@@ -1,0 +1,17 @@
+@startuml
+left to right direction
+actor 人間さん as a
+actor CPUさん as b
+rectangle ライントレーサー {
+    usecase 電源SWを入れる as c
+    usecase 右モーターをON as d
+    usecase 右モーターをOFF as e
+    usecase 左モーターをON as f
+    usecase 左モーターをOFF as g
+}
+a --> c
+b --> d
+b --> e
+b --> f
+b --> g
+@enduml
