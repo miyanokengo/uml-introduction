@@ -1,0 +1,12 @@
+@startuml 分岐
+title カレー
+start
+:野菜を切る;
+if ()
+:ルー作る;
+else
+:飯炊く;
+endif
+:混ぜる;
+stop
+@enduml
