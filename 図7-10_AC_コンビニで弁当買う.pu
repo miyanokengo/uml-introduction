@@ -1,0 +1,18 @@
+@startuml アクティビティ図の例
+|客|
+|定員|
+start
+:action A;
+fork
+|客|
+|定員|
+:action B;
+:action C;
+|客|
+|定員|
+:action E;
+fork again
+end fork
+:action G;
+stop
+@enduml

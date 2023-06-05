@@ -1,0 +1,10 @@
+@startuml 
+title 予約システム
+start
+repeat
+:ユーザー名入力;
+:パスワード入力;
+repeat while (認証成功) -> [No]
+:予約;
+stop
+@enduml
